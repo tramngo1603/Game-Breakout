@@ -53,7 +53,7 @@ for (let i=0; i<brickRowCount; i++) {
 function drawBall() {
   ctx.beginPath();
   ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
-  ctx.fillStyle = "#1F5C70";
+  ctx.fillStyle = "#364c88";
   ctx.fill();
   ctx.closePath();
 }
@@ -62,7 +62,7 @@ function drawBall() {
 function drawPaddle() {
   ctx.beginPath()
   ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
-  ctx.fillStyle = "#1F5C70";
+  ctx.fillStyle = "#364c88";
   ctx.fill();
   ctx.closePath()
 }
@@ -200,8 +200,9 @@ document.addEventListener("keydown", keyDown);
 document.addEventListener("keyup", keyUp);
 
 function drawScore() {
-  ctx.font = "20px Arial";
-  ctx.fillText(`Score: ${score}`, canvas.width - 100, 30)
+  ctx.font = "18px Roboto";
+  ctx.fillStyle = "#fff"
+  ctx.fillText(`Score: ${score}`, canvas.width - 100, 30);
 }
 
 // show and close rules

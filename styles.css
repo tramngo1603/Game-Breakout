@@ -10,8 +10,12 @@ body {
   justify-content: center;
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
-  margin: 0
-}
+  margin: 0;
+  background-image:
+		url('./assets/beach.jpg');
+	background-size:
+		1500px 2000px;
+	}
 
 h1 {
   font-size: 45px;
@@ -20,9 +24,10 @@ h1 {
 }
 
 canvas {
-  background: #F0F0F0;
+  background: transparent;
   display: block;
   border-radius: 5px;
+  border: 1px solid #f0f0f0;
 }
 
 .btn{
